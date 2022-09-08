@@ -10,7 +10,7 @@ const Expenses = (props) => {
   
   return (
     <div>
-      <ExpensesFilter setSelectedYear={setSelectedYear} />
+      <ExpensesFilter selectedYear={selectedYear} setSelectedYear={setSelectedYear} />
       <Card className="expenses">
         <ExpenseItem
           title={props.expenses[0].title}
